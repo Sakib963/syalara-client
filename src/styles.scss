@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+
+/** Scroll bar **/
+@supports selector(::-webkit-scrollbar) {
+      .supports-scrollbars\: pr-2 {
+        padding-right: 0.5rem;
+      }
+    }
